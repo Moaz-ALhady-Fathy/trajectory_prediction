@@ -10,7 +10,7 @@ Junwei Liang, Lu Jiang, Alexander Hauptmann
 
 
 # References
-<a id="1">[1]</a> 
+```
 @inproceedings{liang2020simaug,
   title={SimAug: Learning Robust Representations from Simulation for Trajectory Prediction},
   author={Liang, Junwei and Jiang, Lu and Hauptmann, Alexander},
@@ -18,3 +18,4 @@ Junwei Liang, Lu Jiang, Alexander Hauptmann
   month = {August},
   year={2020}
 }
+```
