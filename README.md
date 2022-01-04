@@ -8,7 +8,7 @@ Predicting future trajectories of people in cameras of novel scenarios and views
 Junwei Liang, Lu Jiang, Alexander Hauptmann
 
 ## Our Pipline
-![](Iimages/project_pipline.jpeg)
+![](Images/project_pipline.jpeg)
 
 ## References
 ```
