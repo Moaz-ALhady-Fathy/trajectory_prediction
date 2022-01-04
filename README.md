@@ -20,4 +20,3 @@ Junwei Liang, Lu Jiang, Alexander Hauptmann
   year={2020}
 }
 ```
-
