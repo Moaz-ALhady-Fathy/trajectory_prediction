@@ -7,7 +7,7 @@ Predicting future trajectories of people in cameras of novel scenarios and views
 [ SimAug: Learning Robust Representatios from Simulation for Trajectory Prediction ](https://arxiv.org/abs/2004.02022)
 Junwei Liang, Lu Jiang, Alexander Hauptmann
 
-## Our Pipline
+## Our Pipeline
 <img src="Images/pipline.jpg" width=500>
 
 ## Dependencies
