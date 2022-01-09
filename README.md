@@ -14,9 +14,6 @@ Junwei Liang, Lu Jiang, Alexander Hauptmann
  * Python 3.6 ; TensorFlow 1.15.0 ; Pytorch 1.7 ; Cuda 10 
 
 ## Code Contributors
-- [Esraa Elgemiei](https://github.com/Esraa-Elgemiei)
-- [Moaz ALhady](https://github.com/Moaz-ALhady-Fathy)
-
 <a href="https://github.com/Moaz-ALhady-Fathy/Motion_Prediction/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Moaz-ALhady-Fathy/Motion_Prediction" />
 </a>
