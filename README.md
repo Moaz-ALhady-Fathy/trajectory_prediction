@@ -13,6 +13,10 @@ Junwei Liang, Lu Jiang, Alexander Hauptmann
 ## Dependencies
  * Python 3.6 ; TensorFlow 1.15.0 ; Pytorch 1.7 ; Cuda 10 
 
+## Code Contributors
+- [Esraa Elgemiei](https://github.com/Esraa-Elgemiei)
+- [Moaz ALhady](https://github.com/Moaz-ALhady-Fathy)
+
 ## References
 ```
 @inproceedings{liang2020simaug,
