@@ -7,7 +7,7 @@ Predicting future trajectories of people in cameras of novel scenarios and views
 Junwei Liang, Lu Jiang, Alexander Hauptmann
 
 ## Our Pipline
-<img src="Images/pipline.jpg" width=500>
+<img src="Images/pipline.jpg" width=500 class="center">
 •	Input: could be from a streaming camera or saved videos.
 
 •	Detection: we used a pre-trained model called YOLO (You Only Look Once) to perform object detection, it uses convolutional neural networks to provide real-time object detection, it is popular for its speed and accuracy.
