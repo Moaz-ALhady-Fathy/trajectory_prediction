@@ -17,9 +17,6 @@ Junwei Liang, Lu Jiang, Alexander Hauptmann
 <a href="https://github.com/Moaz-ALhady-Fathy/Motion_Prediction/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Moaz-ALhady-Fathy/Motion_Prediction" />
    <img src="https://contrib.rocks/image?repo=Moaz-ALhady-Fathy/Motion_Prediction" />
-   <img src="https://contrib.rocks/image?repo=Moaz-ALhady-Fathy/Motion_Prediction" />
-    <img src="https://contrib.rocks/image?repo=Moaz-ALhady-Fathy/Motion_Prediction" />
-   <img src="https://contrib.rocks/image?repo=Moaz-ALhady-Fathy/Motion_Prediction" />
 </a>
 
 ## References
