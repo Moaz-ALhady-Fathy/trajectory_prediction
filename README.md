@@ -31,11 +31,18 @@ Junwei Liang, Lu Jiang, Alexander Hauptmann
 https://user-images.githubusercontent.com/62403347/148702150-4044d05e-ea69-4dc8-bef4-c0e1481e165f.mp4
 
 ## Results
+We capture streaming video that contains 1628 frames, processing time for stages is
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+   • Yolo & Deep SORT: 20.7 f/s 
+   
+   • DeepLabv3:  4.66 f/s 
+   
+   • SimAug: 12.8 f/s 
+   
+
+|   Video_Name  |   Grid_acc    |     minADE    |     minFDE    |
+| ------------- | ------------- | ------------- | ------------- |
+|   Moving-ITI  |    0.6098     |     22.132    |     39.271    |
 
 ## Dependencies
 •	Python 3.6 ; TensorFlow 1.15.0 ; Pytorch 1.7 ; Cuda 10
