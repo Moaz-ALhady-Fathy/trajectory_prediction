@@ -10,6 +10,9 @@ Junwei Liang, Lu Jiang, Alexander Hauptmann
 ## Our Pipline
 <img src="Images/pipline.jpg" width=500>
 
+## Dependencies
+ * Python 3.6 ; TensorFlow 1.15.0 ; Pytorch 1.7 ; Cuda 10 
+
 ## References
 ```
 @inproceedings{liang2020simaug,
