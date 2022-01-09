@@ -1,5 +1,5 @@
 # Pedestrian Trajectory Prediction
-Predicting future trajectories of people in cameras of novel scenarios and views.
+Predicting future trajectories of pedestrians in cameras of novel scenarios and views.
 
 ## This repository contains the code and models for the following ECCV'20 paper:
 
