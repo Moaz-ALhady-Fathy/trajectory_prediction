@@ -9,7 +9,7 @@ Junwei Liang, Lu Jiang, Alexander Hauptmann
 ## Our Pipeline
 
 <p align="center">
-  <img width="800" src="Images/pipline.jpg" >
+  <img width="600" src="Images/pipline.jpg" >
 </p>
 
 •	**Input**: could be from a streaming camera or saved videos.
