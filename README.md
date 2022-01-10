@@ -46,6 +46,7 @@ $ wget https://next.cs.cmu.edu/data/packed_models_eccv2020.tgz
 $ tar -zxvf packed_models_eccv2020.tgz
 ```
 #### Run the pretrained YOLOv5 & DEEPSORT
+get the annotations on a sample video [**many_people.mp4**](https://github.com/Moaz-ALhady-Fathy/trajectory_prediction/blob/main/videos/Many%20People.mp4) from yolo and deepsort + resized images to 1920 x 1080
 
 ```
 dataset_resize,changelst , annotation = detect('many_people.mp4')
