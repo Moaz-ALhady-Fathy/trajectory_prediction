@@ -28,11 +28,16 @@ Junwei Liang, Lu Jiang, Alexander Hauptmann
 
 
 # Code
-### Running on video
-#### First download the pre-processed data for all the datasets:
+####  Fisrt you need to install packages according to the configuration file:
 ```
-$ wget https://next.cs.cmu.edu/data/packed_prepro_eccv2020.tgz
-$ tar -zxvf packed_prepro_eccv2020.tgz
+$ pip install -r requirements.txt
+```
+
+### Running on video
+#### Then download the deeplab ADE20k model(used for Semantic Segmentation):
+```
+$ wget http://download.tensorflow.org/models/deeplabv3_xception_ade20k_train_2018_05_29.tar.gz
+$ tar -zxvf deeplabv3_xception_ade20k_train_2018_05_29.tar.gz
 ```
 
 #### Then download SimAug-trained model:
