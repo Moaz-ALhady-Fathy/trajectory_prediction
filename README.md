@@ -26,6 +26,60 @@ Junwei Liang, Lu Jiang, Alexander Hauptmann
 
 •	**Predicted Trajectory**: The output of the proposed pipeline.
 
+
+# Code
+### Running on video
+#### First download the pre-processed data for all the datasets:
+```
+$ wget https://next.cs.cmu.edu/data/packed_prepro_eccv2020.tgz
+$ tar -zxvf packed_prepro_eccv2020.tgz
+```
+
+#### Then download SimAug-trained model:
+```
+$ wget https://next.cs.cmu.edu/data/packed_models_eccv2020.tgz
+$ tar -zxvf packed_models_eccv2020.tgz
+```
+#### Run the pretrained YOLOv5 & DEEPSORT
+
+```
+dataset_resize,changelst , annotation = detect('many_people.mp4')
+```
+#### Prepare the annotation
+- get box centre x,y for each person (traj_data)
+- person_box_data : boxes coordinates for all persons
+- other_box_data : boxes of other objects in the same frame with each targeted person
+
+```
+traj_data, person_box_data, other_box_data  = prepared_data_sdd(annotation,changelst)
+```
+#### Run the segmentation model
+
+```
+model_path= 'deeplabv3_xception_ade20k_train/frozen_inference_graph.pb'
+seg_output= extract_scene_seg(dataset_resize,model_path,every =100)
+```
+#### Prepare all data for the SimAug model
+###### making npz which contanins arrays for details of the segmentation with annotations and person ids
+
+```
+data=To_npz(8,12,traj_data,seg_output)
+np.savez("prepro_fold1/data_test.npz", **data)
+```
+#### Test SimAug-Trained Model
+
+```
+!python Code/test.py prepro_fold1/ packed_models/ best_simaug_model \
+--wd 0.001 --runId 0 --obs_len 8 --pred_len 12 --emb_size 32 --enc_hidden_size 256 \
+--dec_hidden_size 256 --activation_func tanh --keep_prob 1.0 --num_epochs 30 \
+--batch_size 12 --init_lr 0.3 --use_gnn --learning_rate_decay 0.95 --num_epoch_per_decay 5.0 \
+--grid_loss_weight 1.0 --grid_reg_loss_weight 0.5 --save_period 3000 \
+--scene_h 36 --scene_w 64 --scene_conv_kernel 3 --scene_conv_dim 64 \
+--scene_grid_strides 2,4 --use_grids 1,0 --val_grid_num 0 --gpuid 0 --load_best \
+--save_output sdd_out.p
+```
+##### To Run the pipline from [here](https://github.com/Moaz-ALhady-Fathy/trajectory_prediction/blob/main/pipeline.ipynb)
+
 ## Demo
 
 https://user-images.githubusercontent.com/62403347/148702150-4044d05e-ea69-4dc8-bef4-c0e1481e165f.mp4
@@ -46,6 +100,7 @@ We capture streaming video that contains 1628 frames, processing time for stages
 
 ## Dependencies
 •	Python 3.6 ; TensorFlow 1.15.0 ; Pytorch 1.7 ; Cuda 10
+
 
 ## Code Contributors
 <a href="https://github.com/Moaz-ALhady-Fathy/trajectory_prediction/graphs/contributors">
