@@ -86,6 +86,8 @@ np.savez("prepro_fold1/data_test.npz", **data)
 ```
 ##### To Run the pipeline from [here](https://github.com/Moaz-ALhady-Fathy/trajectory_prediction/blob/main/pipeline.ipynb)
 
+##### You can find project documnentation [here](https://drive.google.com/drive/folders/1Mae-9go6aoIk9Z5KLBAlZXQRLZFvF6w3?usp=sharing)
+
 ## Demo
 
 https://user-images.githubusercontent.com/62403347/148702150-4044d05e-ea69-4dc8-bef4-c0e1481e165f.mp4
