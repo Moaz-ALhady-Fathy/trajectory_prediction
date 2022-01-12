@@ -84,7 +84,9 @@ np.savez("prepro_fold1/data_test.npz", **data)
 --scene_grid_strides 2,4 --use_grids 1,0 --val_grid_num 0 --gpuid 0 --load_best \
 --save_output sdd_out.p
 ```
-##### To Run the pipeline from [here](https://github.com/Moaz-ALhady-Fathy/trajectory_prediction/blob/main/pipeline.ipynb)
+##### You can run the pipeline from [here](https://github.com/Moaz-ALhady-Fathy/trajectory_prediction/blob/main/pipeline.ipynb)
+
+
 
 ##### You can find project documnentation [here](https://drive.google.com/drive/folders/1Mae-9go6aoIk9Z5KLBAlZXQRLZFvF6w3?usp=sharing)
 
